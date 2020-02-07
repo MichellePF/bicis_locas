@@ -4,8 +4,8 @@ function validateForm(){
 		alert('El campo nombre es obligatorio');
 		return;
 	}
-	else if(/^([0-9])*$/.test(nombre)){
-		alert("El valor " + nombre + " no es una letra");
+	else if(!(/^([A-Za-z])*$/.test(nombre))){
+		alert("El valor " + nombre + " debe contener solo letras");
 		return;
 	}
 	else if(nombre[0] !=nombre[0].toUpperCase()){
@@ -20,8 +20,8 @@ function validateForm(){
 		alert('El campo apellido es obligatorio');
 		return;
 	}
-	else if(/^([0-9])*$/.test(apellido)){
-		alert("El valor " + apellido + " no es una letra");
+	else if(!(/^([A-Za-z])*$/.test(apellido))){
+		alert("El valor " + apellido + " debe contener solo letras");
 		return;
 	}
 	else if(apellido[0] != apellido[0].toUpperCase()){
